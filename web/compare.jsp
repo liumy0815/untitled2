@@ -18,6 +18,7 @@
             session.removeAttribute("randomNumber");
             response.sendRedirect("input.jsp");
         }
+        
         if (userNumber > randomNumber) {
             session.setAttribute("message", "你输入的是"+userNumber+"，您猜大了，请重新输入");
             response.sendRedirect("input.jsp");
