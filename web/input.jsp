@@ -20,6 +20,7 @@
     if(session.isNew()||"您猜对了,系统将重新分配随机数".equals(message))
         session.setAttribute("randomNumber", (int)(Math.random() * 100));
 %>
+
 <form action="compare.jsp" method="post">
     <table border="0" align="left">
         <tr>
