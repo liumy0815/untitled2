@@ -25,6 +25,7 @@
     <table border="0" align="left">
         <tr>
             <td>欢迎来玩猜数字——</td>
+            
         </tr>
         <tr>
             <td>请输入0-99的随机数字:</td>
