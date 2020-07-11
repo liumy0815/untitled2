@@ -6,6 +6,7 @@
         body{
             position: absolute;
         }
+        
         input{
             border:1px solid #000;
             margin: auto;
