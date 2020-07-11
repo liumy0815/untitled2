@@ -14,7 +14,7 @@
 
 
         if (userNumber == randomNumber) {
-            session.setAttribute("message", "您猜对了,系统将重新分配随机数");
+            session.setAttribute("message", "您猜对了,系统将为您重新分配随机数");
             session.removeAttribute("randomNumber");
             response.sendRedirect("input.jsp");
         }
@@ -22,6 +22,7 @@
             session.setAttribute("message", "你输入的是"+userNumber+"，您猜大了，请重新输入");
             response.sendRedirect("input.jsp");
         }
+
         if (userNumber < randomNumber) {
             session.setAttribute("message", "你输入的是"+userNumber+"，您猜小了，请重新输入");
             response.sendRedirect("input.jsp");
