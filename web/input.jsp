@@ -17,7 +17,7 @@
     String message = (String) session.getAttribute("message");
     if (message != null)
         out.println(message);
-    if(session.isNew()||"您猜对了,系统将重新分配随机数".equals(message))
+    if(session.isNew()||"您猜对了,系统将为您重新分配随机数".equals(message))
         session.setAttribute("randomNumber", (int)(Math.random() * 100));
 %>
 
@@ -25,7 +25,7 @@
     <table border="0" align="left">
         <tr>
             <td>欢迎来玩猜数字——</td>
-            
+
         </tr>
         <tr>
             <td>请输入0-99的随机数字:</td>
